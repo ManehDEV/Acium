@@ -1,0 +1,18 @@
+name: Acium
+main: dev.mannyyy.acium.Main
+author: Mannyyy
+version: 1.0
+depend: [Vault]
+
+commands:
+    buy:
+      aliases: [store, buycraft]
+    broadcast:
+      aliases: [bc,alert,ebc,bcast,ebcast,ebroadcast,shout,eshout]
+    buycraftbroadcast:
+    sellall:
+    ranks:
+     aliases: [rankstatus, rank, rs]
+    rankup:
+    balance:
+      aliases: [bal,ebal,ebalance,money,emoney]
