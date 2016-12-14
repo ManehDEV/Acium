@@ -8,6 +8,7 @@ import dev.mannyyy.acium.Commands.Tokens;
 import dev.mannyyy.acium.Listeners.Click;
 import dev.mannyyy.acium.Listeners.PlayerJoin;
 import dev.mannyyy.acium.Listeners.SignChange;
+import dev.mannyyy.acium.Listeners.SignInteract;
 import dev.mannyyy.acium.Utils.Placeholders;
 
 public class Main extends JavaPlugin{
@@ -23,6 +24,7 @@ public class Main extends JavaPlugin{
 		getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
 		getServer().getPluginManager().registerEvents(new Click(), this);
 		getServer().getPluginManager().registerEvents(new SignChange(), this);
+		getServer().getPluginManager().registerEvents(new SignInteract(), this);
 		getConfig().options().copyDefaults(true);
 		config();
 	}

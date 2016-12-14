@@ -7,6 +7,7 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -18,6 +19,7 @@ public class Click implements Listener{
 	@EventHandler
 	public void onClick(PlayerInteractEvent e){
 		Player p = e.getPlayer();
+		if(e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK){
 		if(p.getItemInHand() != null){
 		if(p.getItemInHand().getType() == Material.MAGMA_CREAM){
 		if(p.getItemInHand().hasItemMeta()){
@@ -58,6 +60,7 @@ public class Click implements Listener{
 		} catch (Exception e1){
 		    	p.sendMessage("" + ChatColor.YELLOW + ChatColor.BOLD + "(!) " + ChatColor.GRAY + "The amount you entered is invalid!");
 		    	return;
+		}
 		}
 		}
 		}

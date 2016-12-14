@@ -317,6 +317,7 @@ public class Tokens implements CommandExecutor{
 						}
 						}
 						p.sendMessage("" + ChatColor.YELLOW + ChatColor.BOLD + "(!) " + ChatColor.GRAY + "Not enough permissions!");
+						return true;
 					} catch (Exception e){
 					    	p.sendMessage("" + ChatColor.YELLOW + ChatColor.BOLD + "(!) " + ChatColor.GRAY + "The amount you entered is invalid!");
 					    	return true;
@@ -346,6 +347,7 @@ public class Tokens implements CommandExecutor{
 						}
 						}
 						p.sendMessage("" + ChatColor.YELLOW + ChatColor.BOLD + "(!) " + ChatColor.GRAY + "Not enough permissions!");
+						return true;
 					} catch (Exception e){
 					    	p.sendMessage("" + ChatColor.YELLOW + ChatColor.BOLD + "(!) " + ChatColor.GRAY + "The amount you entered is invalid!");
 					    	return true;
